@@ -1,10 +1,18 @@
-package Orintacao_a_Objetos.bytebank;
+package Orintacao_a_Objetos.bytebank_composto;
 
 public class Conta {
-    double saldo;
+    private double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
+
+
+    //metodo getter pro saldo
+    public double getSaldo(){
+      return this.saldo;
+    };
+
+    //setter é a modificação
 
     public void deposita(double valor){
         //this referencia da conta q foi invocada
