@@ -1,6 +1,6 @@
 package main.java.io.analu.Polimorfismo.bytebank_encapsulado;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     // protected(pouco usado) = as informações  contidas serão públicas apenas para si e para os filhos
