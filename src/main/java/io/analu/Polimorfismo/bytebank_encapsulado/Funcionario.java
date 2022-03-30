@@ -1,14 +1,15 @@
 package main.java.io.analu.Polimorfismo.bytebank_encapsulado;
 
+// não pode instanciar (criar objetos) dessa clase, pq é abstrata
 public abstract class Funcionario {
     private String nome;
     private String cpf;
     // protected(pouco usado) = as informações  contidas serão públicas apenas para si e para os filhos
     private double salario;
 
-    public double getBonificacao(){
-        return this.salario * 0.1;
-    }
+    //metodo sem corpo, não existe implementacao
+    //mas todos os filhos são obrigados a implementar o metodo
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

@@ -6,4 +6,9 @@ public class ContaPopanca extends Conta{
         super(agencia, conta);
     }
 
+    @Override
+    public void deposita(double valor) {
+        super.saldo += valor;
+    }
+
 }

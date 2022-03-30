@@ -24,7 +24,7 @@ public class Gerente extends Funcionario {
     //getBonificação foi sobrescrita:
     //redefinimos um comportamento previsto na classe mãe através da classe filha
     public double getBonificacao() {
-        return super.getBonificacao() + super.getSalario();
+        return super.getSalario();
     }
 
 }

@@ -1,7 +1,7 @@
 package main.java.io.analu.Polimorfismo.bytebank_herdado;
 
-public class Conta {
-    private double saldo;
+public abstract class Conta {
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -33,10 +33,7 @@ public class Conta {
 
     //setter é a modificação
 
-    public void deposita(double valor){
-        //this referencia da conta q foi invocada
-        this.saldo += valor;
-    }
+    public abstract void deposita(double valor);
 
     public boolean saque(double valor){
         if(this.saldo >= valor){
